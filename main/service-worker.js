@@ -1,55 +1,136 @@
-const e = { toString: () => {
-  throw new Error("`timestamp` has been removed from $service-worker. Use `version` instead");
-} };
-const s = ["/smr-frontend/main/_app/immutable/start-c6a9a9fb.js", "/smr-frontend/main/_app/immutable/pages/__layout.svelte-c1ee05d4.js", "/smr-frontend/main/_app/immutable/assets/pages/__layout.svelte-c5e39dfd.css", "/smr-frontend/main/_app/immutable/error.svelte-741545aa.js", "/smr-frontend/main/_app/immutable/pages/admin/index.svelte-844042e7.js", "/smr-frontend/main/_app/immutable/assets/pages/admin/index.svelte-dfc5337c.css", "/smr-frontend/main/_app/immutable/pages/admin/sml-versions/_smlVersionId_/edit.svelte-76cb3552.js", "/smr-frontend/main/_app/immutable/pages/admin/sml-versions/index.svelte-229acee5.js", "/smr-frontend/main/_app/immutable/pages/admin/sml-versions/new.svelte-da1b99c1.js", "/smr-frontend/main/_app/immutable/pages/admin/unapproved-mods.svelte-d948d1e0.js", "/smr-frontend/main/_app/immutable/pages/admin/unapproved-versions.svelte-28a2dcac.js", "/smr-frontend/main/_app/immutable/pages/api-docs/index.svelte-1dac813a.js", "/smr-frontend/main/_app/immutable/assets/pages/tos/index.svelte-1ae42d62.css", "/smr-frontend/main/_app/immutable/pages/content-policy/index.svelte-60ccf8e6.js", "/smr-frontend/main/_app/immutable/pages/guide/_guideId_/edit.svelte-87d0a158.js", "/smr-frontend/main/_app/immutable/pages/guide/_guideId_/index.svelte-e269758b.js", "/smr-frontend/main/_app/immutable/pages/guides/index.svelte-07a6ea76.js", "/smr-frontend/main/_app/immutable/pages/help/index.svelte-97aee063.js", "/smr-frontend/main/_app/immutable/pages/index.svelte-f296490c.js", "/smr-frontend/main/_app/immutable/assets/pages/index.svelte-fe20af75.css", "/smr-frontend/main/_app/immutable/pages/mod/_modId_/edit.svelte-33e1e8db.js", "/smr-frontend/main/_app/immutable/pages/mod/_modId_/index.svelte-ecd6149f.js", "/smr-frontend/main/_app/immutable/assets/pages/mod/_modId_/index.svelte-1e2ec0d7.css", "/smr-frontend/main/_app/immutable/pages/mod/_modId_/new-version.svelte-85ca9fa4.js", "/smr-frontend/main/_app/immutable/pages/mod/_modId_/version/_versionId_/edit.svelte-677575da.js", "/smr-frontend/main/_app/immutable/pages/mod/_modId_/version/_versionId_/index.svelte-b4a8d493.js", "/smr-frontend/main/_app/immutable/pages/mod/_modId_/version/_versionId_/view.svelte-4f64cedd.js", "/smr-frontend/main/_app/immutable/pages/mods/index.svelte-ce9f0d36.js", "/smr-frontend/main/_app/immutable/assets/pages/mods/index.svelte-07b34bd3.css", "/smr-frontend/main/_app/immutable/pages/new-guide/index.svelte-b0a56e09.js", "/smr-frontend/main/_app/immutable/pages/new-mod/index.svelte-d38c3ab7.js", "/smr-frontend/main/_app/immutable/pages/privacy-policy/index.svelte-e826fd08.js", "/smr-frontend/main/_app/immutable/pages/settings/index.svelte-a33ca1a0.js", "/smr-frontend/main/_app/immutable/pages/sml-versions/index.svelte-cdab9c54.js", "/smr-frontend/main/_app/immutable/pages/tools/index.svelte-58ca9cf0.js", "/smr-frontend/main/_app/immutable/pages/tos/index.svelte-23a4c596.js", "/smr-frontend/main/_app/immutable/pages/user/_userId_/index.svelte-4571d2fc.js", "/smr-frontend/main/_app/immutable/chunks/extras-8984d02f.js", "/smr-frontend/main/_app/immutable/chunks/forms-5fcb6172.js", "/smr-frontend/main/_app/immutable/chunks/jszip-0721729d.js", "/smr-frontend/main/_app/immutable/chunks/vendor-93f46a94.js", "/smr-frontend/main/_app/immutable/chunks/paths-1c47712a.js", "/smr-frontend/main/_app/immutable/chunks/singletons-cdeec3fd.js", "/smr-frontend/main/_app/immutable/chunks/preload-helper-f72398ae.js", "/smr-frontend/main/_app/immutable/chunks/global-98137ee8.js", "/smr-frontend/main/_app/immutable/chunks/user-bfea9258.js", "/smr-frontend/main/_app/immutable/chunks/navigation-ce539261.js", "/smr-frontend/main/_app/immutable/chunks/launcher-0869f499.js", "/smr-frontend/main/_app/immutable/chunks/api-0a391947.js", "/smr-frontend/main/_app/immutable/chunks/graphql-f19d0585.js", "/smr-frontend/main/_app/immutable/chunks/stores-84e1d086.js", "/smr-frontend/main/_app/immutable/chunks/Toast-a853093a.js", "/smr-frontend/main/_app/immutable/chunks/MetaDescriptors-5ea9952a.js", "/smr-frontend/main/_app/immutable/chunks/routing-c6322149.js", "/smr-frontend/main/_app/immutable/chunks/SMLVersionForm-de4f067b.js", "/smr-frontend/main/_app/immutable/assets/ModForm-cc1db5c2.css", "/smr-frontend/main/_app/immutable/chunks/forms-2903de53.js", "/smr-frontend/main/_app/immutable/chunks/markdown-6a2ff7f0.js", "/smr-frontend/main/_app/immutable/chunks/PageControls-1c8f4bc9.js", "/smr-frontend/main/_app/immutable/chunks/formatting-b1e7d458.js", "/smr-frontend/main/_app/immutable/chunks/GuideForm-d1f26ca2.js", "/smr-frontend/main/_app/immutable/chunks/gql-d96f7ff1.js", "/smr-frontend/main/_app/immutable/chunks/GuideCard-3eaa8d92.js", "/smr-frontend/main/_app/immutable/chunks/FicsitCard-e155e469.js", "/smr-frontend/main/_app/immutable/assets/FicsitCard-4de49b41.css", "/smr-frontend/main/_app/immutable/chunks/uplugin-ea22b63e.js", "/smr-frontend/main/_app/immutable/chunks/ModCard-33b7b4a1.js", "/smr-frontend/main/_app/immutable/chunks/CompatibilityButton-ebac6b6a.js", "/smr-frontend/main/_app/immutable/chunks/ModForm-b21c0d5a.js", "/smr-frontend/main/_app/immutable/chunks/ModCompatibilityEdit-13c30fdc.js", "/smr-frontend/main/_app/immutable/chunks/VersionForm-62ee3168.js", "/smr-frontend/main/_app/immutable/assets/VersionForm-a85b24ef.css", "/smr-frontend/main/_app/immutable/chunks/custom_protocol-9a0f337a.js"];
-const n = ["/smr-frontend/main/assets/android-chrome-192x192.png", "/smr-frontend/main/assets/android-chrome-512x512.png", "/smr-frontend/main/assets/apple-touch-icon.png", "/smr-frontend/main/assets/browserconfig.xml", "/smr-frontend/main/assets/favicon-16x16.png", "/smr-frontend/main/assets/favicon-32x32.png", "/smr-frontend/main/assets/favicon.ico", "/smr-frontend/main/assets/fonts/flow-rounded.woff", "/smr-frontend/main/assets/mstile-150x150.png", "/smr-frontend/main/assets/safari-pinned-tab.svg", "/smr-frontend/main/images/Satisfactory_KeyArt_1_1024x1024_NoLogo.webp", "/smr-frontend/main/images/bg_nologo.webp", "/smr-frontend/main/images/dog_aw_yis_pats.gif", "/smr-frontend/main/images/dog_boing.gif", "/smr-frontend/main/images/dog_stand.gif", "/smr-frontend/main/images/mods_mobile.webp", "/smr-frontend/main/images/no_image.webp", "/smr-frontend/main/images/satisfactory_logo_full_color_small.webp", "/smr-frontend/main/images/sf_modding_logo.webp", "/smr-frontend/main/images/smm_background.webp", "/smr-frontend/main/images/smm_hand.webp", "/smr-frontend/main/images/smm_icon_white.webp", "/smr-frontend/main/manifest.json", "/smr-frontend/main/robots.txt", "/smr-frontend/main/smui.css"];
-const a = self;
-const m = `cache${e}`;
-const t = s.concat(n);
-const i = new Set(t);
-a.addEventListener("install", (e2) => {
-  e2.waitUntil(caches.open(m).then((e3) => e3.addAll(t)).then(() => {
-    a.skipWaiting();
-  }));
+const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), l = [
+  s + "/_app/immutable/entry/app.aa724e29.js",
+  s + "/_app/immutable/assets/0.f6bbcb4c.css",
+  s + "/_app/immutable/nodes/0.a8bae87a.js",
+  s + "/_app/immutable/nodes/1.f9e246f3.js",
+  s + "/_app/immutable/assets/10.ed57ab31.css",
+  s + "/_app/immutable/nodes/10.259852c9.js",
+  s + "/_app/immutable/nodes/11.b6dbcb37.js",
+  s + "/_app/immutable/nodes/12.87f29a9d.js",
+  s + "/_app/immutable/nodes/13.aacbe3f3.js",
+  s + "/_app/immutable/nodes/14.c2a3d672.js",
+  s + "/_app/immutable/nodes/15.3ece1336.js",
+  s + "/_app/immutable/assets/16.7e00afe4.css",
+  s + "/_app/immutable/nodes/16.b6e12bb3.js",
+  s + "/_app/immutable/nodes/17.577dee20.js",
+  s + "/_app/immutable/nodes/18.916efacd.js",
+  s + "/_app/immutable/nodes/19.26dffd76.js",
+  s + "/_app/immutable/assets/2.a2c109c4.css",
+  s + "/_app/immutable/nodes/2.919bfd55.js",
+  s + "/_app/immutable/nodes/20.7207ed7d.js",
+  s + "/_app/immutable/nodes/21.92518150.js",
+  s + "/_app/immutable/assets/22.94c38ead.css",
+  s + "/_app/immutable/nodes/22.2b9caf88.js",
+  s + "/_app/immutable/nodes/23.4e9f76f4.js",
+  s + "/_app/immutable/nodes/24.c3fca9c1.js",
+  s + "/_app/immutable/nodes/25.d0754fe2.js",
+  s + "/_app/immutable/nodes/26.7986fc4a.js",
+  s + "/_app/immutable/nodes/27.bb644025.js",
+  s + "/_app/immutable/nodes/28.11617657.js",
+  s + "/_app/immutable/nodes/29.6e54e1f8.js",
+  s + "/_app/immutable/assets/3.2e7050d3.css",
+  s + "/_app/immutable/nodes/3.744dcdfe.js",
+  s + "/_app/immutable/nodes/30.90d84c7b.js",
+  s + "/_app/immutable/nodes/4.93273f39.js",
+  s + "/_app/immutable/nodes/5.de6600d4.js",
+  s + "/_app/immutable/nodes/6.38addcaa.js",
+  s + "/_app/immutable/nodes/7.f0ef4f45.js",
+  s + "/_app/immutable/nodes/8.f365fd85.js",
+  s + "/_app/immutable/nodes/9.2901d737.js",
+  s + "/_app/immutable/assets/FicsitCard.ac5986c7.css",
+  s + "/_app/immutable/assets/SMLVersionForm.b2987671.css",
+  s + "/_app/immutable/assets/TagList.4b0219dc.css",
+  s + "/_app/immutable/assets/VersionForm.c42cedb5.css",
+  s + "/_app/immutable/chunks/CompatibilityButton.b54891ea.js",
+  s + "/_app/immutable/chunks/FicsitCard.d14de5fa.js",
+  s + "/_app/immutable/chunks/GuideCard.96fcabbe.js",
+  s + "/_app/immutable/chunks/GuideForm.7c63edc5.js",
+  s + "/_app/immutable/chunks/MetaDescriptors.852d1294.js",
+  s + "/_app/immutable/chunks/ModCard.77b1cbad.js",
+  s + "/_app/immutable/chunks/ModCompatibilityEdit.222b4980.js",
+  s + "/_app/immutable/chunks/ModForm.0dc00d8d.js",
+  s + "/_app/immutable/chunks/PageControls.f94fc012.js",
+  s + "/_app/immutable/chunks/SMLVersionForm.7f5af52f.js",
+  s + "/_app/immutable/chunks/TagList.85d3b2c6.js",
+  s + "/_app/immutable/chunks/Toast.707b4ed9.js",
+  s + "/_app/immutable/chunks/VersionForm.edf8706b.js",
+  s + "/_app/immutable/chunks/api.087e22ff.js",
+  s + "/_app/immutable/chunks/extras.b6f88ed0.js",
+  s + "/_app/immutable/chunks/formatting.6003925c.js",
+  s + "/_app/immutable/chunks/forms.524f0aa9.js",
+  s + "/_app/immutable/chunks/forms.d8a5da8b.js",
+  s + "/_app/immutable/chunks/global.fad7d2ff.js",
+  s + "/_app/immutable/chunks/gql.ff9241aa.js",
+  s + "/_app/immutable/chunks/graphql.22d32a05.js",
+  s + "/_app/immutable/chunks/jszip.854423fa.js",
+  s + "/_app/immutable/chunks/launcher.922d950e.js",
+  s + "/_app/immutable/chunks/markdown.f8775f9d.js",
+  s + "/_app/immutable/chunks/preload-helper.12267524.js",
+  s + "/_app/immutable/chunks/uplugin.7e0738e4.js",
+  s + "/_app/immutable/chunks/user.4f18f4c3.js",
+  s + "/_app/immutable/chunks/vendor.d823cc42.js",
+  s + "/_app/immutable/entry/start.df173f39.js",
+  s + "/_app/immutable/chunks/custom_protocol.0ef1eb93.js"
+], b = [
+  s + "/assets/android-chrome-192x192.png",
+  s + "/assets/android-chrome-512x512.png",
+  s + "/assets/apple-touch-icon.png",
+  s + "/assets/browserconfig.xml",
+  s + "/assets/favicon-16x16.png",
+  s + "/assets/favicon-32x32.png",
+  s + "/assets/favicon.ico",
+  s + "/assets/fonts/flow-rounded.woff",
+  s + "/assets/mstile-150x150.png",
+  s + "/assets/safari-pinned-tab.svg",
+  s + "/images/Satisfactory_KeyArt_1_1024x1024_NoLogo.webp",
+  s + "/images/bg_nologo.webp",
+  s + "/images/dog_aw_yis_pats.gif",
+  s + "/images/dog_boing.gif",
+  s + "/images/dog_stand.gif",
+  s + "/images/mods_mobile.webp",
+  s + "/images/no_image.webp",
+  s + "/images/satisfactory_logo_full_color_small.webp",
+  s + "/images/sf_modding_logo.webp",
+  s + "/images/smm_background.webp",
+  s + "/images/smm_hand.webp",
+  s + "/images/smm_icon_white.webp",
+  s + "/manifest.json",
+  s + "/robots.txt",
+  s + "/smui.css"
+], c = "1692887452407", m = self, n = `cache${c}`, o = l.concat(b), d = new Set(o);
+m.addEventListener("install", (a) => {
+  a.waitUntil(
+    caches.open(n).then((e) => e.addAll(o)).then(() => {
+      m.skipWaiting();
+    })
+  );
 });
-a.addEventListener("activate", (e2) => {
-  e2.waitUntil(caches.keys().then(async (e3) => {
-    for (const s2 of e3) {
-      if (s2 !== m) {
-        await caches.delete(s2);
-      }
-    }
-    a.clients.claim();
-  }));
+m.addEventListener("activate", (a) => {
+  a.waitUntil(
+    caches.keys().then(async (e) => {
+      for (const t of e)
+        t !== n && await caches.delete(t);
+      m.clients.claim();
+    })
+  );
 });
-async function r(s2) {
-  const n2 = await caches.open(`offline${e}`);
+async function _(a) {
+  const e = await caches.open(`offline${c}`);
   try {
-    const e2 = await fetch(s2);
-    n2.put(s2, e2.clone());
-    return e2;
-  } catch (e2) {
-    const a2 = await n2.match(s2);
-    if (a2) {
-      return a2;
-    }
-    throw e2;
+    const t = await fetch(a);
+    return e.put(a, t.clone()), t;
+  } catch (t) {
+    const p = await e.match(a);
+    if (p)
+      return p;
+    throw t;
   }
 }
-a.addEventListener("fetch", (e2) => {
-  if (e2.request.method !== "GET" || e2.request.headers.has("range")) {
+m.addEventListener("fetch", (a) => {
+  if (a.request.method !== "GET" || a.request.headers.has("range"))
     return;
-  }
-  const s2 = new URL(e2.request.url);
-  const n2 = s2.protocol.startsWith("http");
-  const a2 = s2.hostname === self.location.hostname && s2.port !== self.location.port;
-  const m2 = s2.host === self.location.host && i.has(s2.pathname);
-  const t2 = e2.request.cache === "only-if-cached" && !m2;
-  if (n2 && !a2 && !t2 && m2 && !e2.request.url.includes("start")) {
-    e2.respondWith((async () => {
-      const s3 = m2 && await caches.match(e2.request);
-      return s3 || r(e2.request);
-    })());
-  }
+  const e = new URL(a.request.url), t = e.protocol.startsWith("http"), p = e.hostname === self.location.hostname && e.port !== self.location.port, i = e.host === self.location.host && d.has(e.pathname), u = a.request.cache === "only-if-cached" && !i;
+  t && !p && !u && i && !a.request.url.includes("start") && a.respondWith(
+    (async () => i && await caches.match(a.request) || _(a.request))()
+  );
 });
-//# sourceMappingURL=service-worker.js.map
