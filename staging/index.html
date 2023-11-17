@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="dark">
   <head>
     <meta charset="utf-8" />
@@ -6,17 +6,18 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="/smr-frontend/staging/_app/immutable/entry/start.8ae9553c.js">
-		<link rel="modulepreload" href="/smr-frontend/staging/_app/immutable/chunks/vendor.6953889a.js">
-		<link rel="modulepreload" href="/smr-frontend/staging/_app/immutable/entry/app.2276f2d7.js">
-		<link rel="modulepreload" href="/smr-frontend/staging/_app/immutable/chunks/preload-helper.12267524.js">
+    
+		<link href="/smr-frontend/staging/_app/immutable/assets/vendor.bd53154f.css" rel="stylesheet">
+		<link rel="modulepreload" href="/smr-frontend/staging/_app/immutable/entry/start.67985474.js">
+		<link rel="modulepreload" href="/smr-frontend/staging/_app/immutable/chunks/vendor.86b49dff.js">
+		<link rel="modulepreload" href="/smr-frontend/staging/_app/immutable/entry/app.8173ea79.js">
+		<link rel="modulepreload" href="/smr-frontend/staging/_app/immutable/chunks/preload-helper.8b93628a.js">
   </head>
-  <body>
-    <div>
+  <body data-theme="custom-theme">
+    <div style="display: contents" class="h-full overflow-hidden">
 			<script>
 				{
-					__sveltekit_filk2d = {
+					__sveltekit_1tbovi1 = {
 						assets: "/smr-frontend/staging",
 						base: "/smr-frontend/staging",
 						env: {"PUBLIC_BACKEND_API_BASE":"https://api.ficsit.dev","PUBLIC_BASE_URL":"https://ficsit.dev","PUBLIC_GOOGLE_SITE_TAG":"UA-138769351-1","PUBLIC_TOLGEE_API_URL":"https://translate.ficsit.app","PUBLIC_TOLGEE_API_KEY":"tgpak_gjptqytrm5sgyy3ohfwdk2junf2wemtbnezts2lig5yte"}
@@ -25,8 +26,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/smr-frontend/staging/_app/immutable/entry/start.8ae9553c.js"),
-						import("/smr-frontend/staging/_app/immutable/entry/app.2276f2d7.js")
+						import("/smr-frontend/staging/_app/immutable/entry/start.67985474.js"),
+						import("/smr-frontend/staging/_app/immutable/entry/app.8173ea79.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
